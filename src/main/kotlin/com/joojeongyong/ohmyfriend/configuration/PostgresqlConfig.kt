@@ -17,7 +17,7 @@ class PostgresqlConfig() {
     }
 
     @Bean
-    fun hikariDatasouce(): DataSource {
+    fun hikariDatasource(): DataSource {
         return HikariDataSource(this.hikariConfig());
     }
 }
